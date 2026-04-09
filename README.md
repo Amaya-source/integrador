@@ -17,4 +17,4 @@ Este proyecto consiste en una página web estática desarrollada íntegramente e
 -Formulario
 
 ## Autor
-Gimenez Lautaro Andres
+Gimenez Lautaro Andres.
