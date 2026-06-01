@@ -1,0 +1,42 @@
+:root {
+    --color-fondo:#04568d;
+    --color-fondo2:#0b97f5c4;
+    --color-fondo3:#5bbdff;
+    --bordes-redondos: 6px;
+    --Fuente-titulos: 'Bebas Neue', sans-serif ;
+    --Tipografia-Btn: 'Lilita One' sans-serif;
+    
+}
+
+body {
+    background-color: var(--color-fondo);
+}
+
+header{
+    background-color: var(--color-fondo2);
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    position: center;
+    margin: auto;
+    border-radius: var(--bordes-redondos);
+    font-family: var(--Fuente-titulos);
+    box-shadow: 5px 5px 6px #000000 ;
+    color: aliceblue;
+}
+
+button{
+    box-shadow: 2px 2px 7px #000000 ;
+    width: 90px;
+    height: 40px;
+    border-radius: var(--bordes-redondos);
+    font-family: var(--Tipografia-Btn);
+    font-size: 20px;
+    color: rgb(54, 53, 53);
+    background-color: rgb(140, 203, 255);
+    
+}
+button:hover{
+    transform: scale(1.04);
+    
+}
