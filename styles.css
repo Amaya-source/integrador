@@ -5,6 +5,8 @@
     --bordes-redondos: 6px;
     --Fuente-titulos: 'Bebas Neue', sans-serif ;
     --Tipografia-Btn: 'Lilita One' sans-serif;
+    --Fondo1: 5px 5px 6px 7PX #000000;
+    --Fondo2:3px 3px 4px #000000;
     
 }
 
@@ -21,13 +23,13 @@ header{
     margin: auto;
     border-radius: var(--bordes-redondos);
     font-family: var(--Fuente-titulos);
-    box-shadow: 5px 5px 6px #000000 ;
+    box-shadow: 5px 5px 6px 6PX #000000 ;
     color: aliceblue;
 }
 
 button{
     box-shadow: 2px 2px 7px #000000 ;
-    width: 90px;
+    width: 100px;
     height: 40px;
     border-radius: var(--bordes-redondos);
     font-family: var(--Tipografia-Btn);
@@ -40,3 +42,53 @@ button:hover{
     transform: scale(1.04);
     
 }
+
+main {
+    width: 400px ;
+    height: auto;
+    background-color: var(--color-fondo2);
+    padding: 5px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: var(--bordes-redondos);
+    box-shadow: var(--Fondo1);
+
+    display: grid;
+    place-items:center;
+
+}
+
+.caja_main_1{
+    width: auto ;
+    height: auto;
+    margin: auto;
+}
+.caja_main_2 {
+    width: 240px ;
+    height: auto;
+    text-align: center;
+    margin: 5px;
+}
+fieldset ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+fieldset li {
+    margin: 0;
+}
+
+fieldset a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-fondo);
+    box-shadow: var(--Fondo2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
