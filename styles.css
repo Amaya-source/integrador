@@ -60,7 +60,7 @@ button:hover{
 }
 
 main {
-    width: 560px;
+    width: 640px;
     height: auto;
     background-color: var(--color-fondo2);
     padding: 10px;
@@ -74,6 +74,7 @@ main {
 
 
 fieldset{
+    width: auto;
     border-radius: var(--bordes-redondos);
     box-shadow: var(--Fondo2);
     padding: 10px;
@@ -111,7 +112,7 @@ fieldset a:hover {
 }
 
 section{
-    width: auto;
+    width: 91%;
     margin: 15px auto;
     transition: all 0.3s ease;
     display: grid;
@@ -130,6 +131,7 @@ section:hover{
     flex-direction: row;
     gap: 10px;
 }
+
  
 .Caja_planific_multimedia{
     width: auto;
@@ -152,6 +154,14 @@ section:hover{
         padding: 15px;
         border-radius: var(--bordes-redondos);
 }
+.Caja_planific_img2{
+        width: auto;
+        height: auto;
+        border-radius: var(--bordes-redondos);
+        box-shadow: var(--Fondo2);
+        margin: auto;
+        padding: 1px;
+}
 legend {
     color: rgb(0, 0, 0);
 }
@@ -171,10 +181,11 @@ ul{
 }
 
 img{
-    width: auto;
+    width: 283px;
+    height: 160px;
     border-radius: var(--bordes-redondos);
-    box-shadow: var(--Fondo2);
-    margin: 5px;
+    box-shadow: var(--Fondo1);
+    margin: 1px;
 }
 
 
@@ -220,43 +231,41 @@ footer a{
     color: white;
 }
 
-@media screen and (max-width: 768px){
-
-    header{
-        width: 90%;
+@media screen and (max-width: 768px) {
+    header, main, footer {
+        width: 95%;
     }
 
-    main{
-        width: 90%;
-    }
-
-    fieldset ol{
+    .Caja_section,
+    .Caja_planific_multimedia {
         flex-direction: column;
         align-items: center;
     }
-    
+
+    .Caja_planific_txt {
+        width: 100%;
+        height: auto;
+    }
+
+    img, video {
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
 }
 
-@media screen and (max-width: 480px){
-
-    header{
-        width: 95%;
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px;
     }
 
-    main{
-        width: 95%;
-    }
-
-    h1{
-        font-size: 30px;
-    }
-
-    button{
+    button {
         width: 100%;
+        margin-top: 10px;
     }
 
-    img,
-    video{
-        width: 100%;
+    .Caja_planific_txt {
+        font-size: 14px;
+        padding: 8px;
     }
 }
