@@ -7,17 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Proyecto_ProgIII</title>
 </head>
 <body>
         <header >
                 <h1>Desarrollo de vidojuegos</h1>
-                        <button href="#formulario">
+                    <a href="#formulario">
+                        <button>
                             Consultar
                         </button>
-
+                    </a>
 
         </header>
     <main >
@@ -26,7 +30,7 @@
             <tr>
                 <td>
                     <fieldset>
-                    <legend><h3>Índice</h3></legend>
+                    <legend><h2>Índice</h2></legend>
                         <ol>
                             <li><a href="#idea"><b>Idea</b></a></li>
                             <li><a href="#Diseño">Diseño</a></li>
@@ -45,6 +49,7 @@
                         <fieldset>
                             
                             <b>Herramientas para desarrolladores:</b> 
+
                             <a href="#Herramienta">
                                 <button type="button">Ir ahora</button>
                             </a>
@@ -59,16 +64,18 @@
         <fieldset>
         <section id="idea">
             <H2>1: Idea</H2>
-            <p>La realidad es que el desarrollo de un videojuego parte de una idea inicial simple. Los desarrolladores están buscando siempre nuevas ideas, ya sea para contar una historia no explorada hasta ahora, crear formas de diversión innovadoras o dar una nueva vuelta a conceptos que ya saben que funcionan. En esta etapa es habitual realizar una lluvia de ideas para explotar la creatividad y encontrar</p>
-            <p>
-                <ul>
-                <li>Qué tipo o género de videojuego se quiere desarrollar</li>
-                <li>Qué historia se quiere contar</li>
-                <li>Cómo serán sus personajes</li>
-                <li>Para qué plataformas se quiere lanzar</li>
-                <li>Qué modalidad gráfica se va a utilizar</li>
-            </ul>
-            </p>
+                <p>La realidad es que el desarrollo de un videojuego parte de una idea inicial simple. Los desarrolladores están buscando siempre nuevas ideas, ya sea para contar una historia no explorada hasta ahora, crear formas de diversión innovadoras o dar una nueva vuelta a conceptos que ya saben que funcionan. En esta etapa es habitual realizar una lluvia de ideas para explotar la creatividad y encontrar</p>
+
+                <p>
+                    <ul>
+                        <li>Qué tipo o género de videojuego se quiere desarrollar</li>
+                        <li>Qué historia se quiere contar</li>
+                        <li>Cómo serán sus personajes</li>
+                        <li>Para qué plataformas se quiere lanzar</li>
+                        <li>Qué modalidad gráfica se va a utilizar</li>
+                    </ul>
+                </p>
+
             </fieldset>
         </section><BR>
         
@@ -80,15 +87,23 @@
         </section><br>
 
         <section id="Planificacion">
+            
             <fieldset>
-            <h2>3:Planificación</h2>
-            <p>Al acabar la fase de diseño del desarrollo de un videojuego se tiene una imagen clara de cómo debería ser el juego y todo lo que se necesitará para alcanzar dicho resultado. Por lo tanto, se organiza la logistica. Se definen los hitos del proyecto, los presupuestos y el cronograma de trabajo. Se asignan tareas a los distintos perfiles (programadores, modeladores, musicos) y se establecen las herramientas tecnologicas o motores gráficos (como <a href="https://unity.com/es" target="_blank">Unity</a>, <a href="https://www.unrealengine.com/es-ES/download" target="_blank">Unreal Engine</a> o <a href="https://godotengine.org/es/" target="_blank">Godot</a>) que se utilizaran.</p>
-            <img src="img/motores_graficos.png" alt="">
+                    <h2>3:Planificación</h2>
+                        <div class="Caja_planific_txt">
+                            <p>Al acabar la fase de diseño del desarrollo de un videojuego se tiene una imagen clara de cómo debería ser el juego y todo lo que se necesitará para alcanzar dicho resultado. Por lo tanto, se organiza la logistica. Se definen los hitos del proyecto, los presupuestos y el cronograma de trabajo. Se asignan tareas a los distintos perfiles (programadores, modeladores, musicos) y se establecen las herramientas tecnologicas o motores gráficos (como    <a href="https://unity.com/es" target="_blank">Unity</a>     , <a href="https://www.unrealengine.com/es-ES/download" target="_blank">Unreal Engine</a> o <a href="https://godotengine.org/es/" target="_blank">Godot</a>       ) que se utilizaran.</p>
+                        </div>
+                        <div class="Caja_planific_multimedia">
+                            <div class="Caja_planific_ img">
+                                <img src="img/motores_graficos.png" alt="">
+                            </div>
 
-            <video controls width="350">
-                <source src="video/Cómo Elegir el Mejor Motor para Tu Juego.mp4" type="video/mp4">
-            </video>
-
+                            <div class="Caja_planific_video">
+                                <video controls width="350">
+                                    <source src="video/Cómo Elegir el Mejor Motor para Tu Juego.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                         </div>
             </fieldset>
         </section><br>
 
@@ -119,8 +134,9 @@
             </fieldset>
         </section>
 
+        <section class="Caja_section">
         <fieldset id="Herramienta">
-            <legend><h3>Kit de Herramientas</h3></legend>
+            <legend><h2>Kit de Herramientas</h2></legend>
             <table border="1" cellpadding="10" cellspacing="0">
                 <thead>
                     <tr bgcolor="#eeeea">
@@ -156,7 +172,7 @@
 
             <form>
                 <fieldset>
-                    <legend>Consulta</legend>
+                    <legend><h2>Consulta</h2></legend>
 
                     <label for="fname">Nombre:</label><br>
                     <input type="text" id="fname" name="nombre" placeholder="Ingrese el nombre" required>
@@ -175,6 +191,7 @@
                 </fieldset>
             </form>
         </div>
+    </section >
         <footer>
             <H2>Bibliografia</H2>
             <ul>

@@ -6,6 +6,7 @@
     --bordes-redondos: 6px;
     --Fuente-titulos: 'Bebas Neue', sans-serif;
     --Tipografia-Btn: 'Lilita One', sans-serif;
+    --Tipografia-txt:'Rubik', sans-serif;
     --Fondo1: 5px 5px 6px 7px #000000;
     --Fondo2: 3px 3px 4px #000000;
 }
@@ -59,7 +60,7 @@ button:hover{
 }
 
 main {
-    width: 400px;
+    width: 560px;
     height: auto;
     background-color: var(--color-fondo2);
     padding: 10px;
@@ -110,13 +111,49 @@ fieldset a:hover {
 }
 
 section{
-    width: 90%;
+    width: auto;
     margin: 15px auto;
     transition: all 0.3s ease;
+    display: grid;
+    justify-content: center;
+  
 }
+
 
 section:hover{
     transform: translateY(-3px);
+}
+.Caja_section{
+     width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+ 
+.Caja_planific_multimedia{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 24px;
+}
+.Caja_planific_txt {
+    width: 850px;
+    height: 100px;
+    padding: 10px;
+
+}
+
+.Caja_planific_ img, .Caja_planific_video {
+        width: auto;
+        height: 250px;
+        padding: 15px;
+        border-radius: var(--bordes-redondos);
+}
+legend {
+    color: rgb(0, 0, 0);
 }
 
 h2{
@@ -126,6 +163,7 @@ h2{
 
 p{
     margin-bottom: 10px;
+    font-family: var(--Tipografia-txt);
 }
 
 ul{
@@ -133,11 +171,12 @@ ul{
 }
 
 img{
-    max-width: 100%;
+    width: auto;
     border-radius: var(--bordes-redondos);
     box-shadow: var(--Fondo2);
     margin: 5px;
 }
+
 
 video{
     max-width: 100%;
@@ -169,8 +208,9 @@ textarea{
 }
 
 footer{
+    width: 400px;
     background-color: var(--color-fondo2);
-    margin-top: 20px;
+    margin:auto;
     padding: 15px;
     border-radius: var(--bordes-redondos);
     box-shadow: var(--Fondo1);
@@ -194,6 +234,7 @@ footer a{
         flex-direction: column;
         align-items: center;
     }
+    
 }
 
 @media screen and (max-width: 480px){
