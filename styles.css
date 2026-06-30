@@ -324,7 +324,9 @@ footer a{
     font-family: var(--Tipografia-txt);
     font-size: 14px;
     margin-top: 2px;
+    transition: opacity 0.3s ease;
 }
+
 
 .mensaje-exito {
     display: block;
