@@ -140,6 +140,20 @@
         <section class="Caja_section">
         <fieldset id="Herramienta">
             <legend><h2>Kit de Herramientas</h2></legend>
+
+            <div class="Caja_filtro">
+                <label for="filtro-nivel">Nivel:</label>
+                <select id="filtro-nivel">
+                    <option value="todos">Todos</option>
+                    <option value="Básico">Básico</option>
+                    <option value="Intermedio">Intermedio</option>
+                    <option value="Avanzado">Avanzado</option>
+                </select>
+
+                <label for="buscar-herramienta">Buscar:</label>
+                <input type="text" id="buscar-herramienta" placeholder="Nombre o categoría...">
+            </div>
+
             <table border="1" cellpadding="10" cellspacing="0">
                 <thead>
                     <tr bgcolor="#eeeea">
@@ -148,49 +162,60 @@
                         <th>Nivel</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>Modelado</td>
-                        <td>Blender</td>
-                        <td>Básico</td>
-                    </tr>
-                    <tr>
-                        <td>Motor de Juego</td>
-                        <td>Unity / Unreal Engine</td>
-                        <td>Intermedio</td>
-                    </tr>
-                    <tr>
-                        <td>Lenguajes</td>
-                        <td>C# / C++</td>
-                        <td>Avanzado</td>
-                    </tr>
-                    
+                <tbody id="tabla-herramientas-body">
+                
                 </tbody>
             </table>
+
+            <div class="Caja_agregar">
+                <h3>Agregar herramienta</h3>
+                <form id="form-agregar-herramienta">
+                    <input type="text" id="nueva-categoria" placeholder="Categoría">
+                    <input type="text" id="nueva-herramienta" placeholder="Nombre de la herramienta">
+                    <select id="nuevo-nivel">
+                        <option value="Básico">Básico</option>
+                        <option value="Intermedio">Intermedio</option>
+                        <option value="Avanzado">Avanzado</option>
+                    </select>
+                    <button type="submit">Agregar</button>
+                </form>
+                <p id="mensaje-agregar"></p>
+            </div>
+        </fieldset>
+
+        <fieldset id="dato-curioso-box">
+            <legend><h2>¿Sabías que...?</h2></legend>
+            <p id="dato-curioso-texto">Hacé clic para descubrir un dato curioso sobre el desarrollo de videojuegos.</p>
+            <button type="button" id="btn-dato-curioso">Mostrar dato curioso</button>
         </fieldset>
         
 
         <div id="formulario">
             <br>
 
-            <form>
+            <form id="form-consulta">
                 <fieldset>
                     <legend><h2>Consulta</h2></legend>
 
                     <label for="fname">Nombre:</label><br>
                     <input type="text" id="fname" name="nombre" placeholder="Ingrese el nombre" required>
+                    <span class="mensaje-error" id="error-fname"></span>
                     <br><br>
 
                     <label for="gmail">Gmail:</label><br>
                     <input type="email" id="gmail" name="gmail" placeholder="Ingrese gmail" required>
+                    <span class="mensaje-error" id="error-gmail"></span>
                     <br><br>
 
                     <label for="comentario">Escribí tu consulta:</label><br>
 
                     <textarea id="comentario" name="comentario"rows="6" cols="50"  maxlength="500">
-                    </textarea><br><br>
+                    </textarea>
+                    <span class="mensaje-error" id="error-comentario"></span>
+                    <br><br>
 
                     <button type="submit">Enviar</button>
+                    <p id="mensaje-formulario"></p>
                 </fieldset>
             </form>
         </div>
@@ -204,5 +229,6 @@
             </ul>
         </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

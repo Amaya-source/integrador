@@ -16,6 +16,7 @@ Este proyecto consiste en una pagina web estatica desarrollada con HTML y CSS. E
 - Imagenes.
 - Videos.
 - Formulario.
+- Tablas
 
 
 ## Capturas del proyecto

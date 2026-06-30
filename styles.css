@@ -271,3 +271,65 @@ footer a{
         padding: 8px;
     }
 }
+
+
+.Caja_filtro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.Caja_filtro select,
+.Caja_filtro input {
+    padding: 6px;
+    border-radius: var(--bordes-redondos);
+    border: none;
+}
+
+.Caja_agregar {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.Caja_agregar form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.Caja_agregar input,
+.Caja_agregar select {
+    width: auto;
+    padding: 6px;
+}
+
+#dato-curioso-box {
+    text-align: center;
+    height: 170px;
+}
+
+#dato-curioso-texto {
+    min-height: 24px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.mensaje-error {
+    display: block;
+    color: #b30000;
+    font-family: var(--Tipografia-txt);
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+.mensaje-exito {
+    display: block;
+    color: #006400;
+    font-family: var(--Tipografia-txt);
+    font-size: 14px;
+    margin-top: 6px;
+}
