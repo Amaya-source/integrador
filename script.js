@@ -6,6 +6,8 @@ const herramientas = [
 
 
 const datosCuriosos = [
+  "Super Mario Bros. tardó solo unos 4 meses en desarrollarse, mientras que muchos juegos actuales llevan años.",
+  "El término 'easter egg' en videojuegos se popularizó después de que Atari escondiera un mensaje oculto en Adventure (1979).",
   "El primer videojuego de la historia, Tennis for Two, se creó en 1958 usando un osciloscopio.",
   "Pac-Man fue pensado para atraer a un público más amplio en una época dominada por juegos de disparos y carreras.",
   "Unreal Engine debe su nombre al juego Unreal de 1998, donde se usó por primera vez.",
